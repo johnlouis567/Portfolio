@@ -43,8 +43,8 @@ export const NavBar = () => {
         </Nav>
         <span className="navbar-text">
           <div className="social-icons">
-            <a href="https://www.linkedin.com/in/john-louis-ingram/" target="_blank"><img src={linkedInIcon} alt="LinkedIn" height="75px" width="75px"/></a>
-            <a href="https://github.com/johnlouis567" target="_blank"><img src={githubIcon} alt="GitHub" height="75px" width="75px" target="_blank"/></a>
+            <a href="https://www.linkedin.com/in/john-louis-ingram/" target="_blank" rel="noopener noreferrer"><img src={linkedInIcon} alt="LinkedIn" height="75px" width="75px"/></a>
+            <a href="https://github.com/johnlouis567" target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="GitHub" height="75px" width="75px" target="_blank"/></a>
           </div>
           <button className="wwd" onClick={() => console.log("Contact Me")}><span>Contact Me</span></button>
         </span>
