@@ -48,7 +48,7 @@ nav.navbar {
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s linear;
 }
 
 nav.navbar.scrolled {
@@ -57,7 +57,11 @@ nav.navbar.scrolled {
 }
 
 nav.navbar a.navbar-brand {
-  width: 9%;
+  width: 15%;
+}
+
+nav.navbar .navbar-brand img {
+  width: 100%;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -216,7 +220,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Banner Styling */
 .banner {
-  margin-top: 0;
+  margin-top: 0px;
   padding: 260px 0 100 px 0;
   background: url('./assets/img/banner.png');
   background-size: cover;
@@ -224,19 +228,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 
-/* Welcome to my portfolio tagline */
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
-}
-
 .banner h1 {
+  margin-top: 140px;
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -274,26 +267,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 
-.banner img {
-  animation: updown 3s linear infinite;
-}
-
-/* Defines how much the banner img will move */
-@keyframes updown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 /* Creates "cursor" to right of dynamic text */
 .wrap {
-  border-right: 0.08em solid #666;
+  border-right: 0.08em solid black;
 }
 
 /* Skills Styling */
@@ -335,19 +311,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Projects Styling */
-.projects {
+.project {
   padding: 80px 0;
   position: relative;
   background-color: black;
 }
 
-.projects h2 {
+.project h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
 }
 
-.projects p {
+.project p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -357,7 +333,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 
-.projects .nav.nav-pills {
+.project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
@@ -365,42 +341,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 
-.projects .nav.nav-pills .nav-item {
+.project .nav.nav-pills .nav-item {
   width: 33.333333%;
 }
 
-.projects .nav.nav-pills .nav-link {
+.project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
+  padding: 17px 0;
   color: #fff;
   width: 100%;
   font-size: 17px;
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
-  padding: 17px 0;
-  text-align: center;
   transition: 0.3s ease-in-out;
+  text-align: center;
   z-index: 0;
 }
 
-.projects .nav.nav-pills .nav-link::before {
+.project .nav.nav-pills .nav-link::before {
   content: "";
   position: absolute;
   width: 0;
   height: 100%;
-  background-color: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #92A2BD -5.91%, #21314D 111.58%);
   top: 0;
   left: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 
-.projects .nav.nav-pills .nav-link.active::before {
+.project .nav.nav-pills .nav-link.active::before {
   width: 100% !important;
 }
 
-.projects .nav.nav-pills .nav-link.active {
+.project .nav.nav-pills .nav-link.active {
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
@@ -428,7 +404,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #92A2BD -5.91%, #21314D 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -468,23 +444,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
-}
-
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
-}
-
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
 }
 
 .App {

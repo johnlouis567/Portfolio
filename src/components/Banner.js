@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/header-img.png";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Software Engineer", "Web Developer", "Programmer", "Freelancer"];
+  const toRotate = ["Software Engineer", "Full-Stack Dev", "Freelancer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -47,13 +47,12 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio </span>
-            <h1>{`Hi I'm John Ingram `}<span className="wrap">{text}</span></h1>
+            <h1>{`Hi I'm John Ingram`}<br/><span className="wrap">{text}</span></h1>
             <p>Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!</p>
             <button onClick={() => console.log('connect')}>Let's Connect! <ArrowRightCircle size={25}/></button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Headder Img" />
+            <img src={headerImg} alt="Headder Img" height="400px" width="400px"/>
           </Col>
 
         </Row>
