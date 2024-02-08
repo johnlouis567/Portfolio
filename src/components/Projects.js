@@ -12,6 +12,11 @@ export const Projects = () => {
       description: 'I am currently building a sign language interpreter which uses computer vision and machine learning to interpret sign language into english in real time.',
       imgUrl: projImg1,
     },
+    {
+      title: 'Event Finder',
+      description: "This project is currently in beta and available on my github. It is a macOS application which allows the user to easily find upcoming events which matches the user's interests using the Ticketmaster API.",
+      imgUrl: projImg1,
+    },
   ];
 
   return (
@@ -51,8 +56,8 @@ export const Projects = () => {
                       }
                     </Row>
                   </Tab.Pane>
-                  <Tab.Pane eventKey="second">Project Name2</Tab.Pane>
-                  <Tab.Pane eventKey="third">Figure out where3</Tab.Pane>
+                  <Tab.Pane eventKey="second">I am currently in the process of creating a custom dataset to train the Machine Learning Model on. More detailed explanation and pictures coming soon.</Tab.Pane>
+                  <Tab.Pane eventKey="third">A Prototype of this project is available on my github. A more in depth description of the project is coming soon.</Tab.Pane>
                 </Tab.Content>
                 </Tab.Container>
               </div>}

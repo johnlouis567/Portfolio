@@ -46,7 +46,7 @@ export const NavBar = () => {
             <a href="https://www.linkedin.com/in/john-louis-ingram/" target="_blank" rel="noopener noreferrer"><img src={linkedInIcon} alt="LinkedIn" height="75px" width="75px"/></a>
             <a href="https://github.com/johnlouis567" target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="GitHub" height="75px" width="75px" target="_blank"/></a>
           </div>
-          <button className="wwd" onClick={() => console.log("Contact Me")}><span>Contact Me</span></button>
+          <button className="wwd" onClick={() => alert("This site is still under construction. This functionality is not yet working. Sorry for the inconvenience!")}><span>Contact Me</span></button>
         </span>
       </Navbar.Collapse>
     </Container>

@@ -48,8 +48,8 @@ export const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <h1>{`Hi I'm John Ingram`}<br/><span className="wrap">{text}</span></h1>
-            <p>Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!Hello, This is a test about me!!!</p>
-            <button onClick={() => console.log('connect')}>Let's Connect! <ArrowRightCircle size={25}/></button>
+            <p id="aboutMe">Hello, my name is John Ingram. I have a Master's degree with a focus on Machine Learning from Colorado School of Mines in the field of Computer Science. I have an enthusiasm for making projects which challenge myself and facilitate learning about technology and people. Check out some of my passion projects and please reach out to me with any questions, I would love to work with you. Cheers!</p>
+            <button onClick={() => alert('This site is still under construction. This functionality is not yet working. Sorry for the inconvenience!')}>Contact Me<ArrowRightCircle size={25}/></button>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Headder Img" height="400px" width="400px"/>

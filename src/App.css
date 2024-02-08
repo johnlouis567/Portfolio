@@ -218,6 +218,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
 /* Banner Styling */
 .banner {
   margin-top: 0px;
@@ -238,12 +252,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 
-.banner p {
+#aboutMe {
   color: #B8B8B8;
+  background-color: rgba(33, 49, 77, 0.7);
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 5px;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+}
+
+.banner img {
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 .banner button {
@@ -251,6 +274,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
+  margin-bottom: 60px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
